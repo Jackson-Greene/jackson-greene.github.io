@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html, body {
+  font-family: Raleway;
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+  overflow: auto;
+}
+
+button {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 2em;
+  padding: 0.45em 1em;
+  cursor: pointer;
+}
+
+.request-resume {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
+.nav-burger {
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.nav-topics li {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  display: inline;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+.picture {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: picture;
+  background-image: url(code_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.vertical-line {
+  width: 5%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "nav nav" "main picture" "footer footer";
+  -ms-grid-rows: 10vh 80vh 10vh;
+      grid-template-rows: 10vh 80vh 10vh;
+  -ms-grid-columns: 70vw 30vw;
+      grid-template-columns: 70vw 30vw;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  display: inline;
+}
+
+.container nav .nav-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.container main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+/*# sourceMappingURL=main-jackson-desktop.css.map */

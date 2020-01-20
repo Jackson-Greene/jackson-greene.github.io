@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html, body {
+  font-family: Raleway;
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+  overflow: auto;
+}
+
+button {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 2em;
+  padding: 0.45em 1em;
+  cursor: pointer;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "nav nav" "main picture" "footer footer";
+  -ms-grid-rows: 5vh 92vh 3vh;
+      grid-template-rows: 5vh 92vh 3vh;
+  -ms-grid-columns: 70vw 30vw;
+      grid-template-columns: 70vw 30vw;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  z-index: 1;
+  position: relative;
+  background-color: gray;
+}
+
+.container nav .nav-burger {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  cursor: pointer;
+}
+
+.container nav .nav-line-left {
+  position: absolute;
+  left: 5vw;
+  top: 1.5vw;
+  height: 0.2vh;
+  width: 32vw;
+}
+
+.container nav .nav-topics {
+  position: absolute;
+  top: 0rem;
+  right: 15vw;
+  list-style: none;
+}
+
+.container nav .nav-topics .nav-item {
+  float: left;
+  padding: 1rem 5rem 1rem 5rem;
+  cursor: pointer;
+}
+
+.container nav .nav-topics .nav-about {
+  font-weight: bold;
+}
+
+.container nav .nav-line-right {
+  position: absolute;
+  right: 3vw;
+  top: 1.5vw;
+  height: 0.2vh;
+  width: 15vw;
+}
+
+.container main {
+  position: relative;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.container main .vertical-line {
+  position: absolute;
+  width: 0.20vw;
+  height: 16vh;
+  top: 1vh;
+  left: 1vh;
+}
+
+.container .picture {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: picture;
+  background-image: url(white_code_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.container footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  background-color: white;
+  position: relative;
+}
+
+.container footer .copyright {
+  position: absolute;
+  font-size: 70%;
+  bottom: 0px;
+  left: 0px;
+}
+/*# sourceMappingURL=main.css.map */
