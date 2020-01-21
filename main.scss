@@ -38,7 +38,7 @@ button
     display: grid;
     grid-template-areas: 
     "nav nav"
-    "main picture"
+    "main main"
     "footer footer";
     grid-template-rows: 5vh 92vh 3vh;
     grid-template-columns: 70vw 30vw;
@@ -62,50 +62,6 @@ button
             cursor: pointer;
         }
 
-        
-        .nav-line-left
-        {
-            position: absolute;
-            left: 5vw;
-            top: 1.5vw;
-            height: 0.2vh;
-            width: 32vw;
-        }
-
-        
-        .nav-topics
-        {
-            position: absolute;
-            top: 0rem;
-            right: 15vw;
-            list-style: none;
-
-
-            .nav-item
-            {
-                float: left;
-                padding: 1rem 5rem 1rem 5rem;
-                cursor: pointer;
-            }
-
-
-            .nav-about
-            {
-                font-weight: bold;
-            }
-            
-        }
-
-
-        .nav-line-right
-        {
-            position: absolute;
-            right: 3vw;
-            top: 1.5vw;
-            height: 0.2vh;
-            width: 15vw;
-        }
-
     }
 
     
@@ -115,43 +71,32 @@ button
         position: relative;
         grid-area: main;
 
-
-        .vertical-line
+        .circles
         {
+            .resume
+            {
+                .resume-image
+                {
+                    height: 5vh;
+                }
+            }
 
-            position: absolute;
-            width: 0.20vw;
-            height: 16vh;
-            top: 1vh;
-            left: 1vh;
-        
+            .projects
+            {
+                .projects-image
+                {
+                    height: 5vh;
+                }
+            }
+
+            .contact
+            {
+                .contact-image
+                {
+                    height: 5vh;
+                }
+            }
         }
-
-
-        .download-resume
-        {
-
-
-
-
-
-        }
-
-
-    }
-    
-    
-    .picture
-    {
-
-
-        grid-area: picture;
-        background-image: url(white_code_background.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-
-
     }
 
     
