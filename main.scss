@@ -17,10 +17,8 @@
 
 html, body
 {
-    font-family: Raleway;
+    font-family: 'montserrat', Helvetica, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0px;
     overflow: auto;
 }
 
@@ -38,85 +36,120 @@ button
     display: grid;
     grid-template-areas: 
     "nav nav"
-    "main main"
+    "text text"
+    "circles circles"
     "footer footer";
-    grid-template-rows: 5vh 92vh 3vh;
+    grid-template-rows: 5vh 20vh 72vh 3vh;
     grid-template-columns: 70vw 30vw;
-    height: 100vh;
-    width: 100vw;
-
-
-    nav
-    {
-        grid-area: nav;
-        z-index: 1;
-        position: relative;
-        background-color: gray;
-        
-
-        .nav-burger
-        {
-            position: absolute;
-            top: 0.5rem;
-            left: 0.5rem;
-            cursor: pointer;
-        }
-
-    }
-
-    
-    main
-    {
-
-        position: relative;
-        grid-area: main;
-
-        .circles
-        {
-            .resume
-            {
-                .resume-image
-                {
-                    height: 5px;
-                }
-            }
-
-            .projects
-            {
-                .projects-image
-                {
-                    height: 5px;
-                }
-            }
-
-            .contact
-            {
-                .contact-image
-                {
-                    height: 5px;
-                }
-            }
-        }
-    }
-
-    
-    footer
-    {
-        grid-area: footer;
-        background-color: white;
-        position: relative;
-
-        .copyright
-        {
-            position: absolute;
-            font-size: 70%;
-            bottom: 0px;
-            left: 0px;
-        }
-    }
-    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
+.name
+{
+    /* font-size: 6vh; */
+    font-size: 3.2vw;
+}
+
+.topic
+{
+    font-size: 1.1vw;
+}
+
+nav
+{
+    grid-area: nav;
+    z-index: 1;
+    position: relative;
+    background-color: gray;
+}
+
+.nav-burger
+{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    cursor: pointer;
+}
+
+main
+{
+
+    position: relative;
+    grid-area: text;
+
+
+}
+
+.circles
+{
+    grid-area: circles;
+}
+
+.resume
+{
+    font-size: 0.65vw;
+    position: absolute;
+    left: 36.5vw;
+    margin: 1vw;
+    top: 22vh
+}
+
+.resume-image
+{
+    height: 5vw;
+}
+
+.projects
+{
+    font-size: 0.65vw;
+    position: absolute;
+    left: 46.5vw;
+    margin: 1vw;
+    top: 22vh;
+}
+
+.projects-image
+{
+    height: 5vw;
+}
+
+
+.contact
+{
+    font-size: 0.65vw;
+    position: absolute;
+    left: 56.5vw;
+    margin: 1vw;
+    top: 22vh
+}
+
+.contact-image
+{
+    height: 5vw;
+}
+
+footer
+{
+    grid-area: footer;
+    background-color: white;
+    position: relative;
+}
+
+.copyright
+{
+    position: absolute;
+    font-size: 70%;
+    bottom: 0px;
+    left: 0px;
+}
 
 
 

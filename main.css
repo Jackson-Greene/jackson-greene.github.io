@@ -13,10 +13,8 @@
 }
 
 html, body {
-  font-family: Raleway;
+  font-family: 'montserrat', Helvetica, sans-serif;
   text-align: center;
-  margin: 0;
-  padding: 0px;
   overflow: auto;
 }
 
@@ -31,16 +29,32 @@ button {
 .container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "nav nav" "main main" "footer footer";
-  -ms-grid-rows: 5vh 92vh 3vh;
-      grid-template-rows: 5vh 92vh 3vh;
+      grid-template-areas: "nav nav" "text text" "circles circles" "footer footer";
+  -ms-grid-rows: 5vh 20vh 72vh 3vh;
+      grid-template-rows: 5vh 20vh 72vh 3vh;
   -ms-grid-columns: 70vw 30vw;
       grid-template-columns: 70vw 30vw;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
-.container nav {
+.name {
+  /* font-size: 6vh; */
+  font-size: 3.2vw;
+}
+
+.topic {
+  font-size: 1.1vw;
+}
+
+nav {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -50,35 +64,66 @@ button {
   background-color: gray;
 }
 
-.container nav .nav-burger {
+.nav-burger {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
   cursor: pointer;
 }
 
-.container main {
+main {
   position: relative;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: main;
+  grid-area: text;
 }
 
-.container main .circles .resume .resume-image {
-  height: 5px;
-}
-
-.container main .circles .projects .projects-image {
-  height: 5px;
-}
-
-.container main .circles .contact .contact-image {
-  height: 5px;
-}
-
-.container footer {
+.circles {
   -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: circles;
+}
+
+.resume {
+  font-size: 0.65vw;
+  position: absolute;
+  left: 36.5vw;
+  margin: 1vw;
+  top: 22vh;
+}
+
+.resume-image {
+  height: 5vw;
+}
+
+.projects {
+  font-size: 0.65vw;
+  position: absolute;
+  left: 46.5vw;
+  margin: 1vw;
+  top: 22vh;
+}
+
+.projects-image {
+  height: 5vw;
+}
+
+.contact {
+  font-size: 0.65vw;
+  position: absolute;
+  left: 56.5vw;
+  margin: 1vw;
+  top: 22vh;
+}
+
+.contact-image {
+  height: 5vw;
+}
+
+footer {
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: footer;
@@ -86,7 +131,7 @@ button {
   position: relative;
 }
 
-.container footer .copyright {
+.copyright {
   position: absolute;
   font-size: 70%;
   bottom: 0px;
