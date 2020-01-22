@@ -91,6 +91,7 @@ main
 .circles
 {
     grid-area: circles;
+    position: absolute;
 }
 
 .resume
@@ -99,7 +100,8 @@ main
     position: absolute;
     left: 36.5vw;
     margin: 1vw;
-    top: 22vh
+    top: 22vh;
+    cursor: grab;
 }
 
 .resume-image
@@ -114,6 +116,7 @@ main
     left: 46.5vw;
     margin: 1vw;
     top: 22vh;
+    cursor: grab;
 }
 
 .projects-image
@@ -128,7 +131,8 @@ main
     position: absolute;
     left: 56.5vw;
     margin: 1vw;
-    top: 22vh
+    top: 22vh;
+    cursor: grab;
 }
 
 .contact-image
@@ -152,6 +156,23 @@ footer
 }
 
 
+.contact-text
+{
+    position: relative;
+    font-weight: normal;
+}
+
+.resume-text
+{
+    position: relative;
+    font-weight: normal;
+}
+
+.projects-text
+{
+    position: relative;
+    font-weight: normal;
+}
 
 
 

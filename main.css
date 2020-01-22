@@ -84,6 +84,7 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: circles;
+  position: absolute;
 }
 
 .resume {
@@ -92,6 +93,8 @@ main {
   left: 36.5vw;
   margin: 1vw;
   top: 22vh;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .resume-image {
@@ -104,6 +107,8 @@ main {
   left: 46.5vw;
   margin: 1vw;
   top: 22vh;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .projects-image {
@@ -116,6 +121,8 @@ main {
   left: 56.5vw;
   margin: 1vw;
   top: 22vh;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .contact-image {
@@ -136,5 +143,20 @@ footer {
   font-size: 70%;
   bottom: 0px;
   left: 0px;
+}
+
+.contact-text {
+  position: relative;
+  font-weight: normal;
+}
+
+.resume-text {
+  position: relative;
+  font-weight: normal;
+}
+
+.projects-text {
+  position: relative;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */
